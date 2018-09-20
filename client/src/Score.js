@@ -11,7 +11,7 @@ class Score extends React.Component {
 
   render() {
     return (
-      <div className={"score-box">
+      <div className={"score-box"}>
         {this.props.value}
       </div>
     );
