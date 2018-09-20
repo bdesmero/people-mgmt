@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Game from './Game';
+import Rating from './Rating';
 
 const formatName = (user) => {
   return user.firstName + ' ' + user.lastName;
@@ -23,16 +23,7 @@ class App extends Component {
 
         <h1>Hello, {formatName(user)}!</h1>
 
-        <p className="App-intro">
-          Please give your rating
-          <input
-            type="text"
-            id="rating"
-            name="rating"
-          />
-        </p>
-
-        <Game />
+        <Rating />
       </div>
     );
   }

@@ -1,0 +1,16 @@
+.score-box {
+  max-width: 3rem;
+  padding: 1rem;
+  background: blue;
+  color: white;
+  margin: 0.5rem auto;
+  cursor: pointer;
+}
+
+.score-box:hover {
+  background: red;
+}
+
+.score-box.selected {
+  background: red;
+}
