@@ -1,17 +1,24 @@
 import React, { Component } from 'react';
+import classnames from 'classnames';
 
 class Score extends React.Component {
 
   constructor(props) {
     super(props);
-    this.setState = {
+    this.state = {
       selected: false,
     };
+
+    this.onClick = this.onClick.bind(this);
+  }
+
+  onClick() {
+    this.setState({selected: true});
   }
 
   render() {
     return (
-      <div className={"score-box"}>
+      <div className={classnames('score-box', {'selected': this.state.selected})} onClick={this.onClick}>
         {this.props.value}
       </div>
     );
